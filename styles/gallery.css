@@ -1,0 +1,46 @@
+section {
+	clear: both;
+	overflow: hidden;
+
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+ 	width: 300px;
+	height: 200px;
+}
+
+#contentRight .gallery-img {
+	float: left;
+	padding: 0;
+	margin: 4px;
+	border: solid white 1px;
+}
+
+#contentLeft{
+	min-width: fit-content;
+}
+
+#contentRight {
+	width: 100%;
+}
+
+#categories {
+	position: sticky;
+	top: 10px;
+	list-style-type: none;
+
+	margin: 10px;
+	padding: 10px;
+	border: solid black 2px;
+	background-color: #6f9ae8;
+}
+
+#categories li {
+	font-size: 1.1em;
+	padding: 5px;
+}

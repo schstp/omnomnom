@@ -1,14 +1,6 @@
 body {
-	height: 100%;
 	font-family: Roboto, san-serif;
-
-	margin:0 ;
-}
-
-header {
-	display: flex;
-	justify-content: center;
-	background-color: yellow;
+	margin:0;
 }
 
 footer {
@@ -31,9 +23,9 @@ a:hover {
 	display: flex;
 	align-items: center;
 	width: 80%;
-	min-width: fit-content;
-	height: 70px;
-	margin: 0;
+	min-width: 610px;
+	margin: auto;
+	height: 60px;
 	padding: 0;
 	overflow: hidden;
 	
@@ -44,7 +36,7 @@ a:hover {
 }
 
 #topBar li {
-	display: inline-block;
+	display: block;
 	margin: 0 15px;
 	min-width: fit-content;
 }
@@ -65,23 +57,21 @@ a:hover {
 
 #content {
 	display: flex;
-	margin: auto;
 	width: 80%;
-	min-width: fit-content;
-	height: calc(100vh - 100px);
+	min-width: 610px;
+	margin: auto;
 }
 
 #content div {
-	width: 100%;
-	min-width: 285px;
+	//width: 50%; //SHOULD BE CHANGED OR SPECIFIED SEPARATELY IN contentLeft and contentRight
 	padding: 10px;
 }
 
-.left {
+#contentLeft {
 	background-color: red;
 }
 
-.right {
-	background-color: green;
+#contentRight {
+	background-color: forestgreen;
 }
 
