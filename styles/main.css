@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Roboto, san-serif;
 	margin:0;
@@ -62,16 +66,4 @@ a:hover {
 	margin: auto;
 }
 
-#content div {
-	//width: 50%; //SHOULD BE CHANGED OR SPECIFIED SEPARATELY IN contentLeft and contentRight
-	padding: 10px;
-}
-
-#contentLeft {
-	background-color: red;
-}
-
-#contentRight {
-	background-color: forestgreen;
-}
 
