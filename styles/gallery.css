@@ -4,6 +4,10 @@ section {
 	border-bottom: solid #333 2px;
 }
 
+button {
+	background-color: #D47C44;
+}
+
 h1 {
 	text-align: center;
 	font-size: 2em;
@@ -38,10 +42,11 @@ section img:hover {
 	top: 10px;
 	list-style-type: none;
 
+	width: 210px;
 	margin: 10px;
 	padding: 10px;
 	border: solid black 2px;
-	background-color: #6f9ae8;
+	background-color: #D47C44;
 }
 
 #categories li {
@@ -75,7 +80,7 @@ section img:hover {
 	width: 80%;
 	height: 90%;
 
-	background-color: white;
+	background-color: #F8F5EF;
 }
 
 .current-img img {

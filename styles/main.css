@@ -5,22 +5,28 @@ html {
 body {
 	font-family: Roboto, san-serif;
 	margin:0;
+	background-color: #F8F5EF;
+	color: #282828;
 }
 
 footer {
 	height: 30px;
 	text-align: center;
-	background-color: gray;
-	color: white;
+	background-color: #282828;
+	color: #F8F5EF;
 }
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #282828;
+}
+
+p {
+	text-align: justify;
 }
 
 a:hover {
-	color: white;
+	color: #F8F5EF;
 }
 
 #topBar {
@@ -36,7 +42,7 @@ a:hover {
 	list-style-type: none;
 	
 	font-size: 1.5em;
-	background-color: #6f9ae8;
+	background-color: #D47C44;
 }
 
 #topBar li {
@@ -56,7 +62,7 @@ a:hover {
 
 .top-bar-left-side a {
 	font-weight: bold;
-	color: white;
+	color: #F8F5EF;
 }
 
 #content {
