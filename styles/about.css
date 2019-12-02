@@ -41,6 +41,7 @@ section a {
 	align-items: center;
 	width: 150px;
 	height: 50px;
+	margin: auto;
 	background-color: #D47C44;
 
 	font-size: 1.3em;

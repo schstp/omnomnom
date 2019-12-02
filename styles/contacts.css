@@ -1,0 +1,57 @@
+#contentLeft {
+	width: 50%;
+}
+
+#contentRight {
+	width: 50%;
+}
+
+#content a {
+	color: #282828;
+	text-decoration: underline;
+}
+
+#content a:hover {
+	color: #D47C44;
+}
+
+section {
+	
+	margin: 20px 20px 20px 0;
+	padding: 10px;
+	background-color: #d5cecec7;
+
+	font-size: 1.1em;
+}
+
+#parkingInfo {
+	margin: 20px 0 0;
+}
+
+#schedule {
+	border: solid black 1px;
+	border-collapse: collapse;
+}
+
+#schedule td, th {
+	width: 70px;
+	border: solid black 1px;
+	text-align: center;
+
+}
+
+#contentLeft img {
+	float: right;
+	width: calc(100% - 20px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#contentRight img {
+	width: 100%;
+	margin-top: 20px;
+}
+
+section h2 {
+	font-size: 1.1em;
+}
