@@ -1,0 +1,120 @@
+#contentLeft{
+	min-width: fit-content;
+}
+
+#contentRight {
+	width: 100%;
+  background-color: #d5cece52;
+}
+
+.subMenu a{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+	background-color: #D47C44;
+
+	font-size: 1.5em;
+}
+
+.subMenu{
+	position: sticky;
+  top: 0px;
+  margin:auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.dishes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dish{
+  width: 310px;
+  height: 260px;
+  position: relative;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.front{
+  background-color: #d5cecec7;
+}
+
+.back{
+  background-color: #d5cecec7;
+  transform: rotateY(180deg);
+}
+
+
+.dish:hover .front{
+  transform: rotateY(180deg);
+}
+
+.dish:hover .back{
+  transform: rotateY(360deg);
+}
+
+section{
+  text-align: center;
+}
+
+h2{
+  font-size: 2em;
+  margin: 10px 0px 0px 0px;
+  border-bottom: solid #333 2px;
+}
+
+.dish img{
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.dishName{
+  text-align: center;
+  width: 90%;
+  font-size: 1.5em;
+  margin:auto;
+}
+
+.description{
+  padding: 20px;
+  font-size: 1.6em;
+  margin-top: 0px;
+}
+
+.price{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:auto;
+  font-size: 1.4em;
+  padding: 20px;
+  margin: auto;
+}
+
+.weight{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:auto;
+  font-size: 1.4em;
+  padding: 20px;
+  margin: auto;
+}

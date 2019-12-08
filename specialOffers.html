@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/menu.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<title>Omnomnom - Special Offers</title>
 </head>
 <body>
@@ -17,12 +21,104 @@
 	</header>
 	<div id="content">
 		<div id="contentLeft">
-			<h1>LEFT COLUMN</h1>
+			<ul class="subMenu">
+				<li><a href="food.html">Food</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="specialOffers.html">Special offers</a></li>
+				<li><a href="businessLunch.html">Business lunch</a></li>
+			</ul>
 		</div>
 		<div id="contentRight">
-			<h1>RIGTH COLUMN</h1>
+			<section id="specialOffers">
+				<h2>Indian Cuisine Week</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/1.jpg">
+							<p class="dishName">Insalata di cozze e pesto</p>
+						</div>
+						<div class="back">
+							<p class="description">Arugula, tomato and fresh champignon salad. Dressed with pesto sauce. Served with fried tiger prawns and mussels in a creamy sauce.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 420 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/2.jpg">
+							<p class="dishName">Insalata di Arsoli</p>
+						</div>
+						<div class="back">
+							<p class="description">Salad of marola leaves, strawberries with cheeses fiore di latte, feta and pine nuts. Dressed with Arsoli sauce.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 420/20 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/3.jpg">
+							<p class="dishName">Insalata Riva di Solto</p>
+						</div>
+						<div class="back">
+							<p class="description">Salad of baked bell pepper, tomato, orange concasse with fried bacon and chicken. Dressed with Riva di Solto sauce.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Weight: 320 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/4.jpg">
+							<p class="dishName">Mayale di Ronciglione</p>
+						</div>
+						<div class="back">
+							<p class="description">Smoked pork neck. Served with Ronciglione and Parmesan.</p>
+							<p class="price">Price: 5€</p>
+							<p class="weight">Weight: 350 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/5.jpg">
+							<p class="dishName">Cozza con salsa di formaggio</p>
+						</div>
+						<div class="back">
+							<p class="description">Baked black mussels with cheese salsa and pesto sauce.</p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 330 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/6.jpg">
+							<p class="dishName">Zuppa di San Michele</p>
+						</div>
+						<div class="back">
+							<p class="description">Thick spicy tomato and vegetable soup. Served with broccoli, shrimp and cilantro.</p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 380 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/specialOffers/7.jpg">
+							<p class="dishName">Pesce Peach Bianco</p>
+						</div>
+						<div class="back">
+							<p class="description">Garnished with mashed potatoes with roasted champignons and onions with Rosello sauce.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 440 g</p>
+						</div>
+					</div>
+			</section>
 		</div>
 	</div>
 	<footer>Omnomnom 2019</footer>
+	<script type="text/javascript">
+	if(document.readyState||document.body.readyState=='complete')
+	{
+		$(".front").css("transition", "1s");
+		$(".back").css("transition", "1s");
+	}
+	</script>
 </body>
 </html>

@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<title>Omnomnom - Food</title>
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/menu.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Omnomnom - Drinks</title>
 </head>
 <body>
 	<header>
@@ -17,12 +21,166 @@
 	</header>
 	<div id="content">
 		<div id="contentLeft">
-			<h1>LEFT COLUMN</h1>
+			<ul class="subMenu">
+				<li><a href="food.html">Food</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="specialOffers.html">Special offers</a></li>
+				<li><a href="businessLunch.html">Business lunch</a></li>
+			</ul>
 		</div>
 		<div id="contentRight">
-			<h1>RIGTH COLUMN</h1>
+			<section id="Soups">
+				<h2>Soups</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/1.jpg">
+							<p class="dishName">Zuppa con pollo e pasta</p>
+						</div>
+						<div class="back">
+							<p class="description">Chicken soup with homemade noodles.</p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 400 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/2.jpg">
+							<p class="dishName">Florentina Zuppa</p>
+						</div>
+						<div class="back">
+							<p class="description">Creamy soup with fried champignons and spinach seasoned with egg yolk.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 420/2 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/3.jpg">
+							<p class="dishName">Zuppa di fungi</p>
+						</div>
+						<div class="back">
+							<p class="description">Mushroom soup with oils, honey mushrooms, onions, carrots, potatoes and leeks.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Weight: 420/10 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/4.jpg">
+							<p class="dishName">Zuppa di cozzi</p>
+						</div>
+						<div class="back">
+							<p class="description">Mussel, bacon, potato and cream soup with leek.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Weight: 300 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/5.jpg">
+							<p class="dishName">Zuppa di Askale Pecheno</p>
+						</div>
+						<div class="back">
+							<p class="description">Piquant tomato cream soup with bacon in combination with dressing from the best Italian herbs.</p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 250/10 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/soups/6.jpg">
+							<p class="dishName">Crema di gamberry</p>
+						</div>
+						<div class="back">
+							<p class="description">Cream soup of broccoli, cream and shrimp. </p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 250/30 g</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Pizza">
+				<h2>Pizza</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/1.jpg">
+							<p class="dishName">Americana / Grande Mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, mozzarella cheese, boiled ham, Salsicia piquant sausage, champignons.</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/2.jpg">
+							<p class="dishName">Margarita / Grande Mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, mozzarella cheese, cherry tomatoes.</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/3.jpg">
+							<p class="dishName">Prosciutto / Grande Mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, boiled ham, mozzarella cheese.</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/4.jpg">
+							<p class="dishName">Fungi / Grande mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, champignons, mozzarella cheese.
+</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/5.jpg">
+							<p class="dishName">Hawaiian / Grande Mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, mozzarella cheese, boiled ham, pineapple.</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/food/pizza/6.jpg">
+							<p class="dishName">Al Tunno / Grande Mozzarella</p>
+						</div>
+						<div class="back">
+							<p class="description">Tomatoes, tuna, onions, mozzarella cheese, tomato slice.</p>
+							<p class="price">Price: 6/8€</p>
+							<p class="weight">Weight: 440/540 g</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 	<footer>Omnomnom 2019</footer>
+	<script type="text/javascript">
+	if(document.readyState||document.body.readyState=='complete')
+	{
+		$(".front").css("transition", "1s");
+		$(".back").css("transition", "1s");
+	}
+	</script>
 </body>
 </html>

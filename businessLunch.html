@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<title>Omnomnom - Business Lunch</title>
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/menu.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Omnomnom - Business Lunches</title>
 </head>
 <body>
 	<header>
@@ -17,12 +21,115 @@
 	</header>
 	<div id="content">
 		<div id="contentLeft">
-			<h1>LEFT COLUMN</h1>
+			<ul class="subMenu">
+				<li><a href="food.html">Food</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="specialOffers.html">Special offers</a></li>
+				<li><a href="businessLunch.html">Business lunch</a></li>
+			</ul>
 		</div>
 		<div id="contentRight">
-			<h1>RIGTH COLUMN</h1>
+			<section id="Sets">
+				<h2>Sets</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/1.jpg">
+							<p class="dishName">Lunch №1</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with chopped chicken meatballs with spaghetti in coconut milk sauce, vegetables and bacon chips.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 420 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/2.jpg">
+							<p class="dishName">Lunch №2</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with zander in batter with mashed potatoes, stewed cabbage, assorted beans, fresh vegetables and creamy horseradish sauce.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 420/20 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/3.jpg">
+							<p class="dishName">Lunch №3</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with chicken fillet, su view with polenta, quinoa, vegetables, scrambled eggs and bacon chips.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Weight: 320 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/4.jpg">
+							<p class="dishName">Lunch №4</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with chicken wings and gedza with spaghetti in spicy sauce, chuka salad, green beans.</p>
+							<p class="price">Price: 5€</p>
+							<p class="weight">Weight: 350 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/5.jpg">
+							<p class="dishName">Lunch №5</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with boiled beef in pepper sauce with polenta, assorted beans, a salad of crisp cabbage, broccoli and poached egg.</p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 330 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/6.jpg">
+							<p class="dishName">Lunch №6</p>
+						</div>
+						<div class="back">
+							<p class="description">Bowl with minced beef of pike perch and salmon with squid rings, rice with scrambled eggs, vegetables and pickled ginger. </p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 380 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/7.jpg">
+							<p class="dishName">Lunch №7</p>
+						</div>
+						<div class="back">
+							<p class="description">Fresh cabbage salad, chicken fillet in spices and citrus marinade, penne in bechamel sauce.</p>
+							<p class="price">Price: 8€</p>
+							<p class="weight">Weight: 440 g</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/businessLunch/8.jpg">
+							<p class="dishName">Lunch №8</p>
+						</div>
+						<div class="back">
+							<p class="description">Vegetable salad with seaweed, caesar roll. </p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Weight: 540 g</p>
+						</div>
+					</div>
+			</section>
 		</div>
 	</div>
 	<footer>Omnomnom 2019</footer>
+	<script type="text/javascript">
+	if(document.readyState||document.body.readyState=='complete')
+	{
+		$(".front").css("transition", "1s");
+		$(".back").css("transition", "1s");
+	}
+	</script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
 	<link rel="stylesheet" type="text/css" href="styles/gallery.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,7 +34,7 @@
 					</ul>
 				</li>
 			</ul>
-			
+
 		</div>
 		<div id="contentRight">
 			<div id="galleryShowbox">
@@ -66,7 +66,7 @@
 
 			</section>
 			<section id="food">
-				
+
 				<h1>Food</h1>
 
 				<img src="img/food/1.png">
@@ -78,7 +78,7 @@
 				<img src="img/food/7.jpg">
 				<img src="img/food/8.png">
 				<img src="img/food/9.jpg">
-			
+
 			</section>
 			<section id="drinks">
 
@@ -93,14 +93,14 @@
 				<img src="img/drinks/7.jpg">
 				<img src="img/drinks/8.jpg">
 				<img src="img/drinks/9.jpeg">
-			
+
 			</section>
 			<section id="events">
-				
+
 				<h1>Events</h1>
 
 				<section id="eventS1">
-				
+
 					<h2>Pork Feast</h2>
 
 					<img src="img/events/pf/1.jpg">
@@ -128,7 +128,7 @@
 					<img src="img/events/wt/7.jpg">
 					<img src="img/events/wt/8.jpg">
 					<img src="img/events/wt/9.jpg">
-				
+
 				</section>
 
 				<section id="eventS3">
@@ -144,7 +144,7 @@
 					<img src="img/events/ft/7.jpg">
 					<img src="img/events/ft/8.jpg">
 					<img src="img/events/ft/9.jpg">
-				
+
 				</section>
 
 				<section id="eventS4">
@@ -187,17 +187,17 @@
 
 					if (i === IMGS.length - 1) i = -1;
 					$('.current-img img').attr('src', IMGS[i+1].src);
-					
+
 					current_img = IMGS[i+1];
 				})
 
 				$('#prevBtn').click(function() {
 					i = 0;
 					while (IMGS[i] != current_img) i += 1;
-					
+
 					if (i === 0) i = IMGS.length;
 					$('.current-img img').attr('src', IMGS[i-1].src);
-					
+
 					current_img = IMGS[i-1];
 				})
 

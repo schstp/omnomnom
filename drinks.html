@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/menu.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<title>Omnomnom - Drinks</title>
 </head>
 <body>
@@ -17,12 +21,152 @@
 	</header>
 	<div id="content">
 		<div id="contentLeft">
-			<h1>LEFT COLUMN</h1>
+			<ul class="subMenu">
+				<li><a href="food.html">Food</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="specialOffers.html">Special offers</a></li>
+				<li><a href="businessLunch.html">Business lunch</a></li>
+			</ul>
 		</div>
 		<div id="contentRight">
-			<h1>RIGTH COLUMN</h1>
+			<section id="softDrinks">
+				<h2>Soft drinks</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/softDrinks/1.jpg">
+							<p class="dishName">Cold ginger tea with peach</p>
+						</div>
+						<div class="back">
+							<p class="description">Peach, green tea, ginger, sugar.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 500 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/softDrinks/2.jpeg">
+							<p class="dishName">Cherry cooler</p>
+						</div>
+						<div class="back">
+							<p class="description">Seedless cherries, sugar, hibiscus.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 500 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/softDrinks/3.jpg">
+							<p class="dishName">Watermelon-coconut cooler</p>
+						</div>
+						<div class="back">
+							<p class="description">Watermelon, coconut milk, ice.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 500 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/softDrinks/4.jpg">
+							<p class="dishName">Strawberry lemonade</p>
+						</div>
+						<div class="back">
+							<p class="description">Strawberry, guava juice, lemon juice.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 500 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/softDrinks/5.jpg">
+							<p class="dishName">Cold orange juice</p>
+						</div>
+						<div class="back">
+							<p class="description">Orange juice, ice.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 500 ml</p>
+						</div>
+					</div>
+			</section>
+			<section id="alcoholicDrinks">
+				<h2>Alcoholic drinks</h2>
+				<div class="dishes">
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/1.jpg">
+							<p class="dishName">Bacardi Cuba Libre</p>
+						</div>
+						<div class="back">
+							<p class="description">Rum "Bacardi", Pepsi, lime, ice. </p>
+							<p class="price">Price: 6€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/2.jpg">
+							<p class="dishName">Bacardi Mojito</p>
+						</div>
+						<div class="back">
+							<p class="description">Rum “Bacardi”, a choice of post-mix (Seven up, tonic, mineral water), sugar syrup, mint, lime juice, mint, lime, ice.</p>
+							<p class="price">Price: 2€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/3.jpg">
+							<p class="dishName">Watermelon peel</p>
+						</div>
+						<div class="back">
+							<p class="description">Havana Club Anejo 3 years rum, Malibu liqueur, watermelon syrup, pineapple juice, grapefruit juice, cocktail cherry, ice.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/4.jpg">
+							<p class="dishName">Strawberry mojito</p>
+						</div>
+						<div class="back">
+							<p class="description">Rum “Havana Club Anejo 3 years”, a choice of post-mix (Seven up, tonic, mineral water), mint, lime juice, strawberry puree, strawberry syrup.</p>
+							<p class="price">Price: 4€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/5.jpg">
+							<p class="dishName">Oakhart Pepsi Cola</p>
+						</div>
+						<div class="back">
+							<p class="description">Oakhart Original rum, Pepsi, lemon, mint, cinnamon stick, ice.</p>
+							<p class="price">Price: 3€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+					<div class="dish">
+						<div class="front">
+							<img src="img/menu/drinks/alcoholicDrinks/6.jpg">
+							<p class="dishName">Malibu Mix</p>
+						</div>
+						<div class="back">
+							<p class="description">Liqueur "Malibu", a choice: berry drink / pineapple juice / Pepsi, lime juice, lime, ice.</p>
+							<p class="price">Price: 5€</p>
+							<p class="weight">Volume: 250 ml</p>
+						</div>
+					</div>
+			</section>
 		</div>
 	</div>
 	<footer>Omnomnom 2019</footer>
+	<script type="text/javascript">
+	if(document.readyState||document.body.readyState=='complete')
+	{
+		$(".front").css("transition", "1s");
+		$(".back").css("transition", "1s");
+	}
+	</script>
 </body>
 </html>
